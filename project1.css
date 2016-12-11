@@ -1,0 +1,87 @@
+body{
+	background-attachment: fixed;
+	height: 450px;
+}
+
+#body{
+	background-image: url(http://www.textureonline.com/wp-content/uploads/2010/03/silk-fabric-texture-15.jpg);
+	/*https://a2ua.com/silk/silk-005.jpg*/
+}
+.row div{
+	margin: 10px; 
+}
+
+hr{	
+	border-top: 15px double #8c5b8b;
+	 width: 85%;
+	}
+/*z index determines what goes in front.. etc*/
+nav{
+	z-index: 1;
+	text-align: center;
+	background: pink;
+	position:fixed;
+
+	top: 0;
+	left: 0;
+	width: 100%;
+}
+/*position : fixed keeps nav bar from moving when you scroll up or down
+width: 100%; fills up page
+the top and left: the pink background starts 0 pixels from left and top, so its right at the edge of the webpage
+try   top: 50px;
+	left: 0; */
+	nav ul{
+		
+		padding: 0;
+	}
+	/* above centers list in navbar*/
+
+	nav li {
+		display: inline-block;
+		padding: 0 20px;
+
+	}
+	/*inline block means does not start on new line*/
+	section{
+		/*height: 500px
+		padding-top: 56px 20px;*/
+		/*border: 20px blue solid;*/
+		margin: 100px 100px;
+		padding: 10px 20px
+	}
+	p{
+
+		font-size: 40px;
+		font-family: 'Dancing Script', cursive;
+	}
+	h2{
+		font-size: 70px;
+		font-family: 'Dancing Script', cursive;
+	}
+
+.menu-icon{
+		z-index: 2;
+		position: fixed;
+		top: 0;
+		right: 0;
+		font-size: 32px;
+		border-width: 0;
+        background: transparent;
+         display: block;
+          
+
+	}
+	/*now adding media query for mobile screen
+	 768px and less will have a screen for mobile device thats why 768px
+	 is the max value*/
+	@media (max-width: 768px){
+		nav  li{
+    display: block;
+    padding-top: 144px;
+     background: transparent;
+          
+  }
+    }
+
+ 	
