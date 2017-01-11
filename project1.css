@@ -39,6 +39,7 @@ try   top: 50px;
 
 	}
 	/* above centers list in navbar*/
+	/*below puts spacing in li's and not lines up*/
 
 	.navbar-default li {
 		display: inline-block;
@@ -94,12 +95,23 @@ try   top: 50px;
 	/*now adding media query for mobile screen
 	 768px and less will have a screen for mobile device thats why 768px
 	 is the max value*/
-	@media (max-width: 768px){
+	@media (max-width: 1204px){
 		.navbar-default  li{
-    display: block;
+  /*  display: block;
     padding-top: 144px;
      background: transparent;
-          
+          */
+          display: inline-block;
+		padding: 0 30px;
+  }
+    }
+
+
+    @media (max-width: 979px){
+		.navbar-default  li{
+  
+          display: inline-block;
+		padding: 0 10px;
   }
     }
 
