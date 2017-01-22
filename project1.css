@@ -60,22 +60,23 @@ try   top: 50px;
 	}
 	p{
 
-		font-size: 40px;
+		font-size: 16px;
 		/*font-family: 'Dancing Script', cursive;*/
 			font-family:'Roboto', sans-serif;
 	}
-	h2 p{
-		font-size: 70px;
+	h2{
+		font-size: 20px ;
+		 font-weight: bold;
 		
 
 	}
 	div{
-		font-size: 30px;
+		font-size: 20px;
 	}
 	label{
 		margin: 30px;
 	}
-	#moveUp{
+	#moveUp
 		margin-bottom: 20px;
 		text-align: center;
 	}
@@ -92,10 +93,19 @@ try   top: 50px;
           
 
 	}
+
+   body .col-lg-3 .thumbnail img{
+
+	width: 200px;
+	height: 250px;
+
+
+}
+
 	/*now adding media query for mobile screen
 	 768px and less will have a screen for mobile device thats why 768px
 	 is the max value*/
-	@media (max-width: 1204px){
+	@media (max-width: 768px){
 		.navbar-default  li{
   /*  display: block;
     padding-top: 144px;
@@ -107,7 +117,7 @@ try   top: 50px;
     }
 
 
-    @media (max-width: 979px){
+    @media (max-width: 500px){
 		.navbar-default  li{
   
           display: inline-block;
